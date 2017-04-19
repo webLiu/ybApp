@@ -108,7 +108,7 @@ export default {
 
         $.ajax({
             type:'GET',
-            url:'http://vues.com:81/comment/allcomment?page='+self.page+'&aid='+self.aid+'',
+            url:'http://www.ybbuys.com/appserver/comment/allcomment?page='+self.page+'&aid='+self.aid+'',
             xhrFields: {
                 withCredentials: true
              },
@@ -130,7 +130,7 @@ export default {
       setTimeout(function () {
           $.ajax({
             type:'GET',
-            url:'http://vues.com:81/comment/allcomment?page='+self.page+'&aid='+self.aid+'',
+            url:'http://www.ybbuys.com/appserver/comment/allcomment?page='+self.page+'&aid='+self.aid+'',
             xhrFields: {
                 withCredentials: true
              },
@@ -155,7 +155,7 @@ export default {
      setTimeout(function () {
           $.ajax({
             type:'GET',
-            url:'http://vues.com:81/comment/allcomment?page='+self.page+'&aid='+self.aid+'',
+            url:'http://www.ybbuys.com/appserver/comment/allcomment?page='+self.page+'&aid='+self.aid+'',
             xhrFields: {
                 withCredentials: true
              },
@@ -290,7 +290,7 @@ export default {
       }else{
         $.ajax({
           type:'POST',
-          url:'http://vues.com:81/comment/commentlike',
+          url:'http://www.ybbuys.com/appserver/comment/commentlike',
           xhrFields: {
               withCredentials: true
            },
@@ -318,7 +318,7 @@ export default {
         }else{
           $.ajax({
             type:'POST',
-            url:'http://vues.com:81/comment/articlelikeid',
+            url:'http://www.ybbuys.com/appserver/comment/articlelikeid',
             xhrFields: {
                 withCredentials: true
              },

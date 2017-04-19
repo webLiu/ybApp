@@ -60,7 +60,6 @@ let router = new Router({
       path: '/login',
       name: 'login',
       component: Login,
-     
       meta: { title:"登录",keepAlive: false}
     },
     {
@@ -128,7 +127,6 @@ let router = new Router({
     {
       path: '/articleknow',
       name: 'articleknow',
-      
       component: Articleknow,
       meta: {title:"肝病基本知识",keepAlive: true}
     },

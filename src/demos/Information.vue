@@ -137,7 +137,7 @@ export default {
   	var self = this;
   	$.ajax({
 	    type:'GET',
-	    url:'http://vues.com:81/article/listpage?page='+self.page+'',
+	    url:'http://www.ybbuys.com/appserver/article/listpage?page='+self.page+'',
 	    xhrFields: {
 	        withCredentials: true
 	     },
@@ -203,7 +203,7 @@ export default {
       setTimeout(function () {
           $.ajax({
             type:'GET',
-            url:'http://vues.com:81/article/listpage?page='+self.page+'',
+            url:'http://www.ybbuys.com/appserver/article/listpage?page='+self.page+'',
             xhrFields: {
                 withCredentials: true
              },
@@ -227,7 +227,7 @@ export default {
       setTimeout(function () {
         $.ajax({
             type:'GET',
-            url:'http://vues.com:81/article/listpage?page='+self.page+'',
+            url:'http://www.ybbuys.com/appserver/article/listpage?page='+self.page+'',
             xhrFields: {
                 withCredentials: true
              },

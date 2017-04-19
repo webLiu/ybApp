@@ -24,7 +24,7 @@
                       </div>
                        <div class="item-media right-img-content right-contwo">
                         
-                        <img v-if="json[item].picurl == ''" src="http://vues.com:81/static/img/default.jpg" class="imgs">
+                        <img v-if="json[item].picurl == ''" src="http://www.ybbuys.com/appserver/static/img/default.jpg" class="imgs">
                         <img v-else v-bind:src="json[item].picurl" class="imgs">
                        </div>
 
@@ -69,7 +69,7 @@ export default {
   	var self = this;
   	$.ajax({
 	    type:'GET',
-	    url:'http://vues.com:81/article/articlelist?page='+self.page+'&item=2',
+	    url:'http://www.ybbuys.com/appserver/article/articlelist?page='+self.page+'&item=2',
 	    xhrFields: {
 	        withCredentials: true
 	     },
@@ -138,7 +138,7 @@ export default {
       setTimeout(function () {
           $.ajax({
             type:'GET',
-            url:'http://vues.com:81/article/articlelist?page='+self.page+'&item=2',
+            url:'http://www.ybbuys.com/appserver/article/articlelist?page='+self.page+'&item=2',
             xhrFields: {
                 withCredentials: true
              },
@@ -162,7 +162,7 @@ export default {
       setTimeout(function () {
         $.ajax({
             type:'GET',
-            url:'http://vues.com:81/article/articlelist?page='+self.page+'&item=2',
+            url:'http://www.ybbuys.com/appserver/article/articlelist?page='+self.page+'&item=2',
             xhrFields: {
                 withCredentials: true
              },

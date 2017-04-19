@@ -105,7 +105,7 @@ export default {
        
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/mo_data/foundpwd',
+            url:'http://www.ybbuys.com/appserver/mo_data/foundpwd',
             xhrFields: {
                 withCredentials: true
              },
@@ -141,7 +141,7 @@ export default {
 
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/mo_data/foundpwdcode',
+            url:'http://www.ybbuys.com/appserver/mo_data/foundpwdcode',
             xhrFields: {
                 withCredentials: true
              },

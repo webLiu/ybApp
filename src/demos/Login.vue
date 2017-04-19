@@ -83,7 +83,7 @@ export default {
       }else{
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/login',
+            url:'http://www.ybbuys.com/appserver/login',
             xhrFields: {
                 withCredentials: true
              },

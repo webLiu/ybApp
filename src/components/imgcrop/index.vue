@@ -128,7 +128,7 @@ import store from '../../directives/localStorage.js'
                 
                 // ajax Upload
                 
-                    var api = 'http://vues.com:81/mo_data/uploadimg';
+                    var api = 'http://www.ybbuys.com/appserver/mo_data/uploadimg';
                     var data = this.previewSrc; 
                     var uid = store.read("uid"); 
                     $.ajax({

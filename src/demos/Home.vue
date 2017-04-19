@@ -24,14 +24,6 @@
                 </div>
               </div>
             </list-item>
-            <list-item >
-              <div class="item-content">
-                <div class="item-title-row">
-                  <div class="item-title tg-color"></div>
-                  <div class="item-after money-color" >174元起</div>
-                </div>
-              </div>
-            </list-item>
           </list>
         <!-- </router-link> -->
           
@@ -54,7 +46,7 @@ export default {
   },
   data(){
      return {
-      items: ['0', '1', '2', '3', '4'],
+      items: ['0', '1', '2', '3', '4','5','6','7'],
       end: 5,
     }
   },

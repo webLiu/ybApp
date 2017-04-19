@@ -139,7 +139,7 @@ export default {
        
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/user/register',
+            url:'http://www.ybbuys.com/appserver/user/register',
             xhrFields: {
                 withCredentials: true
              },
@@ -175,7 +175,7 @@ export default {
 
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/user/register',
+            url:'http://www.ybbuys.com/appserver/user/register',
             xhrFields: {
                 withCredentials: true
              },

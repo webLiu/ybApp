@@ -139,7 +139,7 @@ export default {
       }else{
        $.ajax({
             type:'POST',
-            url:'http://vues.com:81/comment/addcomment',
+            url:'http://www.ybbuys.com/appserver/comment/addcomment',
             xhrFields: {
                 withCredentials: true
              },

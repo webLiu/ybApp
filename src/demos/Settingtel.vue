@@ -84,7 +84,7 @@ export default {
 
        $.ajax({
             type:'POST',
-            url:'http://vues.com:81/mo_data/replacetel',
+            url:'http://www.ybbuys.com/appserver/mo_data/replacetel',
             xhrFields: {
                 withCredentials: true
              },
@@ -121,7 +121,7 @@ export default {
 
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/mo_data/replacetelcode',
+            url:'http://www.ybbuys.com/appserver/mo_data/replacetelcode',
             xhrFields: {
                 withCredentials: true
              },

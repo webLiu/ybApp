@@ -163,7 +163,7 @@ export default {
       }
       $.ajax({
             type:'POST',
-            url:'http://vues.com:81/mo_data/modata',
+            url:'http://www.ybbuys.com/appserver/mo_data/modata',
             xhrFields: {
                 withCredentials: true
              },
@@ -214,7 +214,7 @@ export default {
 
         $.ajax({
             type:'POST',
-            url:'http://vues.com:81/mo_data/modata',
+            url:'http://www.ybbuys.com/appserver/mo_data/modata',
             xhrFields: {
                 withCredentials: true
              },
