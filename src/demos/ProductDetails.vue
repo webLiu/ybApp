@@ -174,7 +174,7 @@ export default {
       wechat:"ls1125075101",
       tel:13138873797,
       gender:'男',
-      src: 'http://img1.vued.vanthink.cn/vued0a233185b6027244f9d43e653227439a.png',
+      src: 'http://www.ybbuys.com/appserver/static/img/default_touxiang.png',
       oktext:"",
       errtext:"",
       Collection:"收藏",
@@ -245,9 +245,6 @@ export default {
 .img-border {
   border-radius: 5px;
   border:1px solid #EDEDED;
-}
-.name-class {
-  width:30%;
 }
 .g-core-image-upload-btn {
   height: 100%;

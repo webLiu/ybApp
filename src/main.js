@@ -24,7 +24,6 @@ import Home from './demos/Home'
 import Information from './demos/Information'
 import Me from './demos/Me'
 
-
 Vue.config.debug = true
 
 Vue.use(Router)
@@ -86,9 +85,9 @@ let router = new Router({
     {
       path: '/settingtel',
       name: 'settingtel',
-      title:"设置手机号",
       
-      meta: {component: Settingtel,keepAlive: false}
+      component: Settingtel,
+      meta: {title:"设置手机号",keepAlive: false}
     },
     {
       path: '/reservation',

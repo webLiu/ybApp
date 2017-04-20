@@ -141,7 +141,7 @@ export default {
                               self.articledata = backData.data.data
                               
                           }else{
-                            console.log(backData.errmsg)
+                            //console.log(backData.errmsg)
                             self.sfshow = true
                           }
                          
@@ -161,7 +161,7 @@ export default {
       sfshow:false,
       uid:(store.read('uid') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "" : store.read('uid'),
       nickname:(store.read('user_name') == null || store.read('user_name') == undefined  || store.read('user_name') == "") ? "匿名" : store.read('user_name'),
-      pic:(store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://img1.vued.vanthink.cn/vued0a233185b6027244f9d43e653227439a.png" : store.read('user_img'),
+      pic:(store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://www.ybbuys.com/appserver/static/img/default_touxiang.png" : store.read('user_img'),
       aid:0,
       belongid:"",
       oktext:"",

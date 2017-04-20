@@ -92,7 +92,6 @@ export default {
               password:this.password
             },
             success:function (backData) {
-              console.log(backData)
                if(backData.errno !== 0){
                 self.showToast(2,backData.errmsg);
                }else{

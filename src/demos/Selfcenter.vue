@@ -103,7 +103,6 @@ export default {
     ImgCrop
   },
   mounted(){
-    var self = this;
     // $.ajax({
     //         type:'GET',
     //         url:'http://restapi.amap.com/v3/ip?key=08257b42a92e5a550d38dd8e98f67683&ip=119.122.74.198',
@@ -115,7 +114,9 @@ export default {
     //           }
     //         }
     //     })
-  
+    if(this.store_id == null||this.store_id == undefined||this.store_id == ""){
+      this.routers({path:'login'})
+    }
   },
   data () {
     return {
@@ -123,7 +124,7 @@ export default {
       store_id:store.read("uid"),
       store_tel:(store.read('user_tel') == null || store.read('user_tel') == undefined  || store.read('user_tel') == "" ) ? "" : store.read('user_tel'),
 
-      store_img:(store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://img1.vued.vanthink.cn/vued0a233185b6027244f9d43e653227439a.png" : store.read('user_img'),
+      store_img:(store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://www.ybbuys.com/appserver/static/img/default_touxiang.png" : store.read('user_img'),
 
       store_name:(store.read('user_name') == null || store.read('user_name') == undefined  || store.read('user_name') == "") ? "匿名" : store.read('user_name'),
 
@@ -143,7 +144,6 @@ export default {
       this.$refs.actions.open()
     },
     save (index) {
-      console.log(index)
       var self = this;
       switch(index){
         case 0:
@@ -264,11 +264,11 @@ export default {
   background: #ECECEC;
 }
 .img-border{
-  border-radius: 5px;
+  border-radius: 50% !important;
   border:1px solid #EDEDED;
 }
 .name-class{
-  width:30%;
+  width:33%;
   justify-content: flex-start !important;
 }
 .g-core-image-upload-btn {

@@ -29,18 +29,13 @@
     </div>
     <div class="content-padded cols">
         <div class="row row-cont">
-            <div class="col-33 rowss">
-                <icons icon="chaxun">
-                </icons>
-                保单查询
-            </div>
-            <div class="col-33 rowss">
-                <icons icon="yuyue">
+            <div class="rowss">
+                <icons icon="yuyue" style="color:#F94B4E">
                 </icons>
                 我的预约
             </div>
-            <div class="col-33 rowss">
-                <icons icon="lipeirexian">
+            <div class="rowss">
+                <icons icon="lipeirexian" style="color:#71B1FC">
                 </icons>
                 理赔报案
             </div>
@@ -48,7 +43,7 @@
     </div>
     <list class="list-con">
         <div slot="title"></div>
-        <list-item :link="true">
+        <!-- <list-item :link="true">
             <div class="item-media">
                 <icons icon="youxiaobaodan" style="color:#F5A846"></icons>
             </div>
@@ -59,11 +54,11 @@
                     </div>
                 </div>
             </div>
-        </list-item>
+        </list-item> -->
         <!-- <router-link :to="{path:'reservation'}"> -->
             <list-item :link="true" @click.native="routers({path:'reservation'})">
                 <div class="item-media">
-                    <icons icon="dingzhi"></icons>
+                    <icons icon="dingzhi" style="color:#FD986A"></icons>
                 </div>
                 <div class="item-content">
                     <div class="item-title-row">
@@ -78,7 +73,7 @@
         <!-- </router-link> -->
         <list-item :link="true">
             <div class="item-media">
-                <icons icon="shoucang">
+                <icons icon="shoucang" style="color:#F4C23F">
                 </icons>
             </div>
             <div class="item-content">
@@ -94,7 +89,7 @@
         <!-- <router-link :to="{path:'feedback'}"> -->
             <list-item :link="true" @click.native="routers({path:'feedback'})">
                 <div class="item-media">
-                    <icons icon="yijianfankui01">
+                    <icons icon="yijianfankui01" style="color:#79CF68">
                     </icons>
                 </div>
                 <div class="item-content">
@@ -144,7 +139,7 @@ export default {
   data(){
     return{
       store_id: (store.read('uid') == null || store.read('uid') == undefined ) ? 0 :  1,
-      store_img:(store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://img1.vued.vanthink.cn/vued0a233185b6027244f9d43e653227439a.png" : store.read('user_img'),
+      store_img:(store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://www.ybbuys.com/appserver/static/img/default_touxiang.png" : store.read('user_img'),
       store_name:(store.read('user_name') == null || store.read('user_name') == undefined  || store.read('user_name') == "") ? "匿名" : store.read('user_name'),
       store_sex:(store.read('user_sex') == null || store.read('user_sex') == undefined  || store.read('user_sex') == "保密" ) ? "保密" : store.read('user_sex')
     }
@@ -152,7 +147,7 @@ export default {
   },
   activated(){
       this.store_id = (store.read('uid') == null || store.read('uid') == undefined ) ? 0 :  1,
-      this.store_img = (store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://img1.vued.vanthink.cn/vued0a233185b6027244f9d43e653227439a.png" : store.read('user_img'),
+      this.store_img = (store.read('user_img') == null || store.read('user_img') == undefined || store.read('user_img') == "" ) ?  "http://www.ybbuys.com/appserver/static/img/default_touxiang.png" : store.read('user_img'),
       this.store_name = (store.read('user_name') == null || store.read('user_name') == undefined  || store.read('user_name') == "") ? "匿名" : store.read('user_name'),
       this.store_sex = (store.read('user_sex') == null || store.read('user_sex') == undefined  || store.read('user_sex') == "保密" ) ? "保密" : store.read('user_sex')
       document.title = "我的";
@@ -225,9 +220,8 @@ export default {
     text-align: center;
     font-size: 0.7rem;
     padding:.3rem 0;
+    width: 49%;
+    display: inline-table;
 }
-/**{
-  margin:0;padding:0;
-}*/
 </style>
 

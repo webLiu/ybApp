@@ -4,11 +4,9 @@
       <div class="appiont-head">
         <h1 class="appiont-tt1">预约顾问 免费定制</h1>
         <h2 class="ui-f15 ui-fcw">花最少的钱  获最优保障</h2>
-        <img src="http://m.huize.com/activities/yuyue/bdym/images/bg2.png"  alt="" class="appiont-img1">
       </div>
       <section class="formce">
           <h2>今日已有<span class="fc10" id="acContainter">2801</span>人预约顾问</h2>
-          <h3 class="ui-tac">现在预约，优惠高达<span class="fc10">30%</span></h3>
           <form-list>
             <form-item>
                 <div class="item-content">
@@ -31,7 +29,6 @@
               <form-item>
                 <div class="item-content">
                   <div class="item-input">
-                   <!--  <input type="text" placeholder="预约时间" v-model="date2" @click="" > -->
                     <input type="text" v-model="date2" @click="$refs.c2.open()" readonly>
                   </div>
                 </div>
@@ -71,21 +68,6 @@
               </div>
           </div>
           <div class="appoint-list2">
-                  <div class="li">
-                          <h3>精准分析风险</h3>
-                          <img src="http://m.huize.com/activities/yuyue/bdym/images/pic1.png" alt="" class="img1">
-                          <p>十年家庭风险保障数据，评测有依据</p>
-                  </div>
-                  <div class="li">
-                          <h3>不花冤枉钱</h3>
-                          <img src="http://m.huize.com/activities/yuyue/bdym/images/pic2.png" alt="" class="img2">
-                          <p>资深顾问，量身定制高性价比产品</p>
-                  </div>
-                  <div class="li">
-                          <h3>省力更省心</h3>
-                          <img src="http://m.huize.com/activities/yuyue/bdym/images/pic3.png" alt="" class="img1">
-                          <p>私人顾问，全程一对一服务</p>
-                  </div>
                   <div class="appoint-txt">
                           <p>
                                   我们承诺：<br>您的信息仅供接收预约服务所用，您的隐私将被严格保密
@@ -131,7 +113,7 @@ export default {
       tel:"",//手机号码
       name:"",//称呼
       gender:'先生',
-      src: 'http://img1.vued.vanthink.cn/vued0a233185b6027244f9d43e653227439a.png',
+      src: 'http://www.ybbuys.com/appserver/static/img/default_touxiang.png',
       oktext:"",
       errtext:"",
       btnactivesMan:"",
@@ -207,6 +189,7 @@ h1,h2,h3,img {
 }
 .appiont-head {
   text-align: center;
+      padding-bottom: 2rem;
 }
 .appiont-tt1 {
   color: @color0;
@@ -292,7 +275,7 @@ h1,h2,h3,img {
   .li {
     color: @color0;
     float: left;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     text-align: center;
   }
   i {

@@ -64,14 +64,21 @@ export default {
       errtext:"",
       timeCode:"获取短信验证码",
       disabled:false,
-      time:120,
-      path:null
+      time:120
+    }
+  },
+   mounted(){
+    if(this.store_id == null||this.store_id == undefined||this.store_id == ""){
+      this.routers({path:'login'})
     }
   },
   methods: {
     showToast (type,text) {
       type === 1 ? this.$refs.t1.open() : this.$refs.t2.open();
       type === 1 ? this.oktext = text : this.errtext = text;
+    },
+    routers(router){
+      this.$router.push(router);
     },
     post(){
       var self = this;
